@@ -7,7 +7,7 @@ stage("Pulling code fro GIT"){
 stage("Compile and Package"){
     //GET MVN HOME PATH
     def mvnHOME = tool name: 'Maven3.6', type: 'maven'
-    sh '${mvnHOME}/bin/mvn package'
+    sh "${mvnHOME}/bin/mvn package"
 }
 
 
