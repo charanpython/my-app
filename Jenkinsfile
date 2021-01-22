@@ -10,6 +10,4 @@ stage("Compile and Package"){
     sh "${mvnHOME}/bin/mvn package"
 }
 
-
-
 }
