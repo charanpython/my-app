@@ -13,7 +13,7 @@ stage("Compile and Package"){
     stage('Deploying'){
     
         sshagent(['tomcat-dev']) {
-        sh 'scp -o StrictHostKeyChecking=no target/*.war ec2-user@172.31.16.220:/opt/apache-tomcat-9.0.41/webapps'
+        sh 'scp -o StrictHostKeyChecking=no target/*.war ec2-user@172.31.16.220:/opt/apache-tomcat-9.0.41/webapps/'
 }
     }
     
